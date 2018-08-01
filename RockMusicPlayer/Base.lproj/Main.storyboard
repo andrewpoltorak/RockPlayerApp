@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AcademyEngraved.ttf">
+            <string>AcademyEngravedLetPlain</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller Player-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewControllerPlayer" customModule="RockMusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Hhm-vP-rXO">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ALf-jZ-2ip">
+                                <rect key="frame" x="87.5" y="158.5" width="200" height="250"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TY8-wP-0as">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="60"/>
+                                        <color key="backgroundColor" red="0.56092130829015541" green="0.10017895496352432" blue="0.049873626191157504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="pda-B9-tkK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="21"/>
+                                        <size key="titleShadowOffset" width="5" height="5"/>
+                                        <state key="normal" title="Melodic death metal"/>
+                                        <connections>
+                                            <action selector="ganreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NgD-WH-6Af"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2ob-Fj-nrS">
+                                        <rect key="frame" x="0.0" y="95" width="200" height="60"/>
+                                        <color key="backgroundColor" red="0.5588260293006897" green="0.099714092910289764" blue="0.048382364213466644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="L3f-N6-UGe"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="21"/>
+                                        <state key="normal" title="Hard Rock"/>
+                                        <connections>
+                                            <action selector="ganreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eX6-Bf-0KJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ktl-Y6-XC3">
+                                        <rect key="frame" x="0.0" y="190" width="200" height="60"/>
+                                        <color key="backgroundColor" red="0.5588260293006897" green="0.099714092910289764" blue="0.048382364213466644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="JIe-F7-nh3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="21"/>
+                                        <state key="normal" title="Heavy metal"/>
+                                        <connections>
+                                            <action selector="ganreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3g3-5g-wOR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="S3W-5q-atc"/>
+                                    <constraint firstAttribute="height" constant="250" id="okR-3l-P1O"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qrB-mt-WoJ">
+                                <rect key="frame" x="87" y="598" width="90" height="40"/>
+                                <color key="backgroundColor" red="0.5588260293006897" green="0.099714092910289764" blue="0.048382364213466644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FbA-8b-zZg"/>
+                                    <constraint firstAttribute="width" constant="90" id="tl2-lK-FKD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="21"/>
+                                <state key="normal" title="STOP"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Iub-4K-7UN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKr-Vj-mL7">
+                                <rect key="frame" x="198" y="598" width="90" height="40"/>
+                                <color key="backgroundColor" red="0.5588260293006897" green="0.099714092910289764" blue="0.048382364213466644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="78V-xF-Jxs"/>
+                                    <constraint firstAttribute="width" constant="90" id="VCD-8E-naq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AcademyEngravedLetPlain" family="Academy Engraved LET" pointSize="21"/>
+                                <state key="normal" title="NEXT"/>
+                                <connections>
+                                    <action selector="nextButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RTC-8t-tXR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098024986684322357" green="0.098049186170101166" blue="0.098021797835826874" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ALf-jZ-2ip" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="69l-j9-S8f"/>
+                            <constraint firstItem="Hhm-vP-rXO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZB3-Oh-hKn"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="XKr-Vj-mL7" secondAttribute="bottom" constant="29" id="aBm-qX-vj7"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="qrB-mt-WoJ" secondAttribute="bottom" constant="29" id="bhh-Uh-CWQ"/>
+                            <constraint firstItem="XKr-Vj-mL7" firstAttribute="trailing" secondItem="ALf-jZ-2ip" secondAttribute="trailing" id="iFd-e9-nPx"/>
+                            <constraint firstItem="Hhm-vP-rXO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="lej-sa-5jF"/>
+                            <constraint firstItem="qrB-mt-WoJ" firstAttribute="leading" secondItem="ALf-jZ-2ip" secondAttribute="leading" id="oYb-vq-GPh"/>
+                            <constraint firstItem="Hhm-vP-rXO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="paA-D2-YyZ"/>
+                            <constraint firstItem="ALf-jZ-2ip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uNc-CO-O03"/>
+                            <constraint firstItem="Hhm-vP-rXO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="wPj-vW-Smf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="HMButton" destination="Ktl-Y6-XC3" id="9SS-SF-Zfj"/>
+                        <outlet property="HRButton" destination="2ob-Fj-nrS" id="Qhp-oE-stl"/>
+                        <outlet property="MDMButton" destination="TY8-wP-0as" id="z1q-Pk-alE"/>
+                        <outlet property="NextButton" destination="XKr-Vj-mL7" id="8Vk-It-rfh"/>
+                        <outlet property="StopButton" destination="qrB-mt-WoJ" id="Vs4-I7-Efy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background" width="630" height="630"/>
+    </resources>
+</document>
